@@ -1,0 +1,4 @@
+travelpack/model/Member.class
+travelpack/data/MemberListProducer.class
+travelpack/controller/MemberRegistration.class
+travelpack/util/Resources.class
