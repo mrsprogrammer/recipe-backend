@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa17c7ab-8fe9-4841-82f3-eedfef402505" name="Default Changelist" comment="" />
+    <list default="true" id="5bcb3fab-4590-4170-b617-e86d5ac342da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project.ear" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/META-INF/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project/META-INF/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/lib/jaxb-api-2.4.0-b180725.0427.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-ejb-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-web-1.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/target/travel-project-ejb-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/target/travel-project-ejb-1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-ejb/travel-project-ejb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/travel-project-ejb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1.war" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/index.xhtml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1iNNjiJr2FEJcusHLJ1QjunOyI9" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iNSLwpiVxWi151nZ5LOUS9FtdL" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -30,16 +61,27 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aa17c7ab-8fe9-4841-82f3-eedfef402505" name="Default Changelist" comment="" />
-      <created>1601744226789</created>
+      <changelist id="5bcb3fab-4590-4170-b617-e86d5ac342da" name="Default Changelist" comment="" />
+      <created>1601746503918</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601744226789</updated>
-      <workItem from="1601744229826" duration="1092000" />
+      <updated>1601746503918</updated>
+      <workItem from="1601746506642" duration="3908000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

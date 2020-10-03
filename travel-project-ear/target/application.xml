@@ -3,12 +3,12 @@
   <display-name>travel-project-ear</display-name>
   <module>
     <web>
-      <web-uri>travel-project-web-1.war</web-uri>
+      <web-uri>travel-project-web.war</web-uri>
       <context-root>/travel-project</context-root>
     </web>
   </module>
   <module>
-    <ejb>travel-project-ejb-1.jar</ejb>
+    <ejb>travel-project-ejb.jar</ejb>
   </module>
   <library-directory>lib</library-directory>
 </application>
