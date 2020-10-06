@@ -15,7 +15,6 @@
    <name>travel-project EAR module</name>
 
    <dependencies>
-
       <!-- Depend on the ejb module and war so that we can package them -->
       <dependency>
          <groupId>travel</groupId>
@@ -39,19 +38,19 @@
             <configuration>
                <!-- Tell Maven we are using Java EE 6 -->
                <version>6</version>
-               <!-- Use Java EE ear libraries as needed. Java EE ear libraries 
-                  are in easy way to package any libraries needed in the ear, and automatically 
+               <!-- Use Java EE ear libraries as needed. Java EE ear libraries
+                  are in easy way to package any libraries needed in the ear, and automatically
                   have any modules (EJB-JARs and WARs) use them -->
                <defaultLibBundleDir>lib</defaultLibBundleDir>
                <fileNameMapping>no-version</fileNameMapping>
+               <generateApplicationXml>false</generateApplicationXml>
+
                <modules>
-                  <!-- Register our War as a web module, and set the context 
+                  <!-- Register our War as a web module, and set the context
                      root -->
                   <webModule>
                      <groupId>travel</groupId>
                      <artifactId>travel-project-web</artifactId>
-                     <!-- Define the context root for the webapp -->
-                     <contextRoot>/travel-project</contextRoot>
                   </webModule>
                </modules>
             </configuration>
