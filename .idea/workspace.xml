@@ -2,46 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c678d17-b166-4dae-802c-796bec5d172d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/urlrewrite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-ear/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/application.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project.ear" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project.ear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/META-INF/application.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-ejb.jar" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-ejb.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-web.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ejb/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ejb/target/travel-project-ejb-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/target/travel-project-ejb-1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-ejb/travel-project-ejb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ejb/travel-project-ejb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/java/travelpack/rest/JaxRsActivator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/java/travelpack/rest/MemberResourceRESTService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/templates/default.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/resources/css/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/resources/gfx/banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/resources/gfx/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/classes/travelpack/rest/JaxRsActivator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/classes/travelpack/rest/MemberResourceRESTService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1.war" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/classes/travelpack/rest/JaxRsActivator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/classes/travelpack/rest/MemberResourceRESTService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/templates/default.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/jboss-web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/resources/css/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/resources/gfx/banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/resources/gfx/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es2015.e59931fd1349bc6a5a24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es2015.e59931fd1349bc6a5a24.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es5.e59931fd1349bc6a5a24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/polyfills-es2015.ffa9bb4e015925544f91.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/polyfills-es2015.ffa9bb4e015925544f91.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/polyfills-es5-es2015.0290b245fbcca09184ac.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/polyfills-es5.0290b245fbcca09184ac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/runtime-es2015.cdfb0ddb511f65fdc0a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/runtime-es5.cdfb0ddb511f65fdc0a0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/styles.09e2c710755c8867a460.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +44,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,7 +78,8 @@
       <workItem from="1601829367505" duration="4225000" />
       <workItem from="1601920585274" duration="11751000" />
       <workItem from="1601965372095" duration="1112000" />
-      <workItem from="1601998269371" duration="5464000" />
+      <workItem from="1601998269371" duration="10578000" />
+      <workItem from="1602178152152" duration="6063000" />
     </task>
     <servers />
   </component>

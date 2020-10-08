@@ -5,7 +5,7 @@ deploy: ```mvn wildfly:deploy```
 zbudowana aplikacja: http://127.0.0.1:8080/travel/
 !uwaga: zbudowany projekt w travel-project-ear
 zmiana konfiguracji: 
-* usr/share/mvn/conf/settings.xml - ustawiony server - local-wildfly
+* usr/share/maven/conf/settings.xml - ustawiony server - local-wildfly
 * opt/wildfly/standalone/configuration/standalone.xml 
 
 
