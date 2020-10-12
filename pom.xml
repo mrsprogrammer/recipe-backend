@@ -9,7 +9,8 @@
     <name>travel-project application</name>
 
     <modules>
-        <module>travel-project-ejb</module>
+<!--        <module>travel-project-ejb</module>-->
+        <module>travel-project-dao</module>
         <module>travel-project-web</module>
         <module>travel-project-ear</module>
     </modules>
@@ -27,7 +28,7 @@
                repeat ourselves in every module -->
             <dependency>
                 <groupId>travel</groupId>
-                <artifactId>travel-project-ejb</artifactId>
+                <artifactId>travel-project-dao</artifactId>
                 <version>1</version>
                 <type>ejb</type>
             </dependency>

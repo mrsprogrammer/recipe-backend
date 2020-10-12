@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="travel-project-web" />
-        <module name="travel-project-ejb" />
+        <module name="travel-project-dao" />
         <module name="travel-project-ear" />
       </profile>
     </annotationProcessing>

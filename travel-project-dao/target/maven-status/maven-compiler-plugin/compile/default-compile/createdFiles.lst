@@ -1,0 +1,5 @@
+travelpack/dao/AbstractDao.class
+travelpack/JAXRSConfiguration.class
+travelpack/jpa/Travel.class
+travelpack/TravleService.class
+travelpack/dao/TravelDao.class

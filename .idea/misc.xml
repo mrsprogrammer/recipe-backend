@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="ejb" url="file://$PROJECT_DIR$/travel-project-ejb" />
+    <file type="ejb" url="file://$PROJECT_DIR$/travel-project-dao" />
     <file type="javaeeApplication" url="file://$PROJECT_DIR$/travel-project-ear" />
     <file type="web" url="file://$PROJECT_DIR$/travel-project-web" />
   </component>

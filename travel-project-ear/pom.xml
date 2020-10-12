@@ -11,7 +11,6 @@
 
    <artifactId>travel-project-ear</artifactId>
    <packaging>ear</packaging>
-
    <name>travel-project EAR module</name>
 
    <dependencies>
@@ -23,7 +22,7 @@
       </dependency>
       <dependency>
          <groupId>travel</groupId>
-         <artifactId>travel-project-ejb</artifactId>
+         <artifactId>travel-project-dao</artifactId>
          <type>ejb</type>
       </dependency>
    </dependencies>
