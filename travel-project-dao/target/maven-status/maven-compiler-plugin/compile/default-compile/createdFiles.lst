@@ -1,5 +1,7 @@
 travelpack/dao/AbstractDao.class
 travelpack/JAXRSConfiguration.class
-travelpack/jpa/Travel.class
-travelpack/TravleService.class
-travelpack/dao/TravelDao.class
+travelpack/dao/MemberDao.class
+travelpack/CorsFilter.class
+travelpack/jpa/Member.class
+travelpack/MemberResponse.class
+travelpack/MemberService.class
