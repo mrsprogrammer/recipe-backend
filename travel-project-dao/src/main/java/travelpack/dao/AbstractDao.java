@@ -22,10 +22,6 @@ public abstract class AbstractDao<T> {
 //    }
 
     public List<T> findAll() {
-//        return entityManager.createQuery("SELECT a FROM" + "Member" + " a")
-//                .getResultList();
-//        return entityManager.createQuery("from " + getType().getName())
-//                .getResultList();
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<T> cq = cb.createQuery(getType());
 

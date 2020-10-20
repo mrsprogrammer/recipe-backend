@@ -11,8 +11,6 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name="Member")
 public class Member {
-    /** Default value included to remove warning. Remove or modify at will. **/
-
     @Id
     @GeneratedValue
     @Column(name = "id", nullable=false)

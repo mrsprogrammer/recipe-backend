@@ -1,45 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="291fb3f3-13c9-4dfe-a023-323fdb61ed23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/MemberResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/MemberService.java" afterDir="false" />
+    <list default="true" id="77cc736e-63df-48e4-b063-d7a6cfbccc1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel-project-ear/target/application.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/TravleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/MemberResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/dao/AbstractDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/dao/TravelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/jpa/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/jpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/TravleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/dao/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/jpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/src/main/java/travelpack/jpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/CorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/JAXRSConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/JAXRSConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/MemberResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/MemberService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/dao/AbstractDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/dao/TravelDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/jpa/Travel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/dao/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/dao/MemberDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/jpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/classes/travelpack/jpa/Member.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-dao/target/travel-project-dao-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-dao/target/travel-project-dao-1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-dao/travel-project-dao.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project.ear" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project.ear" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-dao.jar" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-dao.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-ear/target/travel-project/travel-project-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-project-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1.war" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/main-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/travel-project-web/target/travel-project-web-1/vendor-es5.js.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1j6By3IqbGa6ELg0Llr22Ej9FYr" />
+  <component name="ProjectId" id="1j9JikynUYStFetwRuu4j6qThPZ" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -72,12 +66,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="291fb3f3-13c9-4dfe-a023-323fdb61ed23" name="Default Changelist" comment="" />
-      <created>1603114911528</created>
+      <changelist id="77cc736e-63df-48e4-b063-d7a6cfbccc1b" name="Default Changelist" comment="" />
+      <created>1603210502539</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603114911528</updated>
-      <workItem from="1603114914791" duration="8417000" />
+      <updated>1603210502539</updated>
+      <workItem from="1603210506029" duration="7228000" />
     </task>
     <servers />
   </component>

@@ -11,8 +11,13 @@
 
     <artifactId>travel-project-web</artifactId>
     <packaging>war</packaging>
-
     <name>travel-project Web module</name>
+
+    <properties>
+        <web.app.directory>/home/justyna/Documents/STUDIA/PROJEKT/travel-frontend</web.app.directory>
+        <build.web.app.directory>/home/justyna/Documents/STUDIA/PROJEKT/travel-frontend/dist/travel-frontend
+        </build.web.app.directory>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -33,7 +38,7 @@
                         <id>exec-yarn-install</id>
                         <phase>install</phase>
                         <configuration>
-                            <workingDirectory>/home/justyna/Documents/STUDIA/PROJEKT/travel-frontend</workingDirectory>
+                            <workingDirectory>${web.app.directory}</workingDirectory>
                             <executable>yarn</executable>
                             <arguments>
                                 <argument>install</argument>
@@ -47,7 +52,7 @@
                         <id>exec-npm-ng-build</id>
                         <phase>compile</phase>
                         <configuration>
-                            <workingDirectory>/home/justyna/Documents/STUDIA/PROJEKT/travel-frontend</workingDirectory>
+                            <workingDirectory>${web.app.directory}</workingDirectory>
                             <executable>yarn</executable>
                             <arguments>
                                 <argument>build</argument>
@@ -67,8 +72,7 @@
                     <!-- Add frontend folder to war package -->
                     <webResources>
                         <resource>
-                            <directory>/home/justyna/Documents/STUDIA/PROJEKT/travel-frontend/dist/travel-frontend
-                            </directory>
+                            <directory>${build.web.app.directory}</directory>
                         </resource>
                     </webResources>
                 </configuration>
