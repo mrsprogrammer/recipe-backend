@@ -1,0 +1,9 @@
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/JAXRSConfiguration.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/jpa/Recipe.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/MemberService.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/jpa/Member.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/RecipeService.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/MemberDao.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/RecipeDao.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/AbstractDao.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/CorsFilter.java

@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>travel</groupId>
-    <artifactId>travel-project</artifactId>
+    <groupId>recipe</groupId>
+    <artifactId>recipe</artifactId>
     <version>1</version>
     <packaging>pom</packaging>
-    <name>travel-project application</name>
+    <name>recipe application</name>
 
     <modules>
-        <module>travel-project-dao</module>
-        <module>travel-project-web</module>
-        <module>travel-project-ear</module>
+        <module>recipe-dao</module>
+        <module>recipe-web</module>
+        <module>recipe-ear</module>
     </modules>
 
     <properties>
@@ -27,16 +27,16 @@
             <!-- Define the version of the EJB jar so that we don't need to
                repeat ourselves in every module -->
             <dependency>
-                <groupId>travel</groupId>
-                <artifactId>travel-project-dao</artifactId>
+                <groupId>recipe</groupId>
+                <artifactId>recipe-dao</artifactId>
                 <version>1</version>
                 <type>ejb</type>
             </dependency>
             <!-- Define the version of the WAR so that we don't need to repeat
                ourselves in every module -->
             <dependency>
-                <groupId>travel</groupId>
-                <artifactId>travel-project-web</artifactId>
+                <groupId>recipe</groupId>
+                <artifactId>recipe-web</artifactId>
                 <version>1</version>
                 <type>war</type>
                 <scope>compile</scope>

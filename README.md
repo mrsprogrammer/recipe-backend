@@ -2,8 +2,8 @@ moje notatki
 =====================
 budowanie: ```mvn clean package```
 deploy: ```mvn wildfly:deploy``` 
-zbudowana aplikacja: http://127.0.0.1:8080/travel/
-!uwaga: zbudowany projekt w travel-project-ear
+zbudowana aplikacja: http://127.0.0.1:8080/recipe/
+!uwaga: zbudowany projekt w recipe-ear
 zmiana konfiguracji: 
 * usr/share/maven/conf/settings.xml - ustawiony server - local-wildfly
 * opt/wildfly/standalone/configuration/standalone.xml 
@@ -11,7 +11,7 @@ zmiana konfiguracji:
 
 
 
-travel-project
+recipe
 =====================
 
 What is it?
@@ -57,7 +57,7 @@ You can now deploy the artifact to JBoss AS by executing the following command:
 
     mvn jboss-as:deploy
 
-This will deploy `target/travel-project.ear`.
+This will deploy `target/recipe.ear`.
  
 The application will be running at the following URL <>.
 
