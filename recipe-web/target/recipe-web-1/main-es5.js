@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<h1 class=\"mt-5\">Recipe</h1>\n<p class=\"lead\">\n  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, expedita!\n  Dolores aspernatur labore magni at nostrum facere cupiditate blanditiis\n  necessitatibus reiciendis iste earum exercitationem, nihil iusto. Ducimus\n  sequi placeat odit?\n</p>\n<p>\n  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eius alias\n  dolorem accusamus nostrum sunt sit omnis accusantium laudantium eveniet esse\n  eos placeat ipsam neque illum maxime voluptatem, beatae nisi!\n</p>\n";
+    __webpack_exports__["default"] = "<mat-card *ngFor=\"let recipe of recipes; index as i\">\n  <mat-card-header>\n    <mat-card-title>{{ recipe.title }}</mat-card-title>\n  </mat-card-header>\n  <img\n    mat-card-image\n    src=\"{{ recipe.image }}\"\n    alt=\"{{ recipe.title }}\"\n    style=\"width: fit-content\"\n  />\n  <mat-card-content>\n    <p>\n      {{ recipe.ingredients }}\n    </p>\n    <p>\n      {{ recipe.method }}\n    </p>\n  </mat-card-content>\n</mat-card>\n";
     /***/
   },
 
@@ -900,25 +900,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/platform-browser/animations */
+    "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+    /* harmony import */
+
+
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/material/card */
+    "./node_modules/@angular/material/esm2015/card.js");
+    /* harmony import */
+
+
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/material/button */
+    "./node_modules/@angular/material/esm2015/button.js");
+    /* harmony import */
+
+
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _main_main_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _main_main_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ./main/main.component */
     "./src/app/main/main.component.ts");
     /* harmony import */
 
 
-    var _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./recipe/recipe.component */
     "./src/app/recipe/recipe.component.ts");
 
@@ -927,11 +945,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_6__["Main"], _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_7__["Recipe"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_9__["Main"], _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_10__["Recipe"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["NoopAnimationsModule"], // material modules
+      _angular_material_card__WEBPACK_IMPORTED_MODULE_5__["MatCardModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"]],
       providers: [],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/common/global-constants.ts":
+  /*!********************************************!*\
+    !*** ./src/app/common/global-constants.ts ***!
+    \********************************************/
+
+  /*! exports provided: GlobalConstants */
+
+  /***/
+  function srcAppCommonGlobalConstantsTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "GlobalConstants", function () {
+      return GlobalConstants;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var GlobalConstants = function GlobalConstants() {
+      _classCallCheck(this, GlobalConstants);
+    };
+
+    GlobalConstants.apiURL = "http://localhost:8080/api";
+    GlobalConstants.imagesURL = "http://localhost:8080/img";
     /***/
   },
 
@@ -1045,20 +1099,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _common_global_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../common/global-constants */
+    "./src/app/common/global-constants.ts");
 
     var Recipe = /*#__PURE__*/function () {
       function Recipe(http) {
         _classCallCheck(this, Recipe);
 
         this.http = http;
+        this.recipes = [];
+        this.src = "home/justyna/Documents/STUDIA/RECIPE/images/tarta_czekoladowa.jpg";
       }
 
       _createClass(Recipe, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          // Simple GET request with response type <any>
-          this.http.get("http://localhost:8080/api/recipes").subscribe(function (data) {
-            console.log(data);
+          var _this = this;
+
+          this.http.get("".concat(_common_global_constants__WEBPACK_IMPORTED_MODULE_3__["GlobalConstants"].apiURL, "/recipes")).subscribe(function (recipes) {
+            console.log(recipes);
+            _this.recipes = recipes.map(function (_a) {
+              var image = _a.image,
+                  rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"](_a, ["image"]);
+              return Object.assign({}, rest, {
+                image: "".concat(_common_global_constants__WEBPACK_IMPORTED_MODULE_3__["GlobalConstants"].imagesURL, "/").concat(image)
+              });
+            });
           });
         }
       }]);

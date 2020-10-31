@@ -1,13 +1,51 @@
 moje notatki
 =====================
-budowanie: ```mvn clean package```
-deploy: ```mvn wildfly:deploy``` 
-zbudowana aplikacja: http://127.0.0.1:8080/recipe/
-!uwaga: zbudowany projekt w recipe-ear
-zmiana konfiguracji: 
-* usr/share/maven/conf/settings.xml - ustawiony server - local-wildfly
-* opt/wildfly/standalone/configuration/standalone.xml 
+Komendy:
+* budowanie: ```mvn clean package```
+!uwaga: wywołanie komendy w recipe-ear, zbudowany projekt w recipe-ear/target
 
+* deploy: ```mvn wildfly:deploy``` 
+
+Linki:
+* zbudowana aplikacja: http://localhost:8080/recipe/
+* api: http://localhost:8080/api
+* obrazki: http://localhost:8080/img/
+
+
+Linux:
+* maven - lokalizacja: /usr/share/maven
+* standalone.xml - lokalizacja: /opt/wildfly/standalone/configuration
+
+Zmiany w konfiguracji: 
+* usr/share/maven/conf/settings.xml - ustawiony server - local-wildfly
+* opt/wildfly/standalone/configuration/standalone.xml - konfiguracja driver dla MySql
+
+```
+                <drivers>
+                    <driver name="h2" module="com.h2database.h2">
+                        <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
+                    </driver>
+                    <driver name="mysql" module="com.mysql">
+                        <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
+                    </driver>
+                </drivers>
+```
+
+* konfiguracja servera images - zmiana conf w standalone.xml
+```         
+            <server name="default-server">
+                    {...}
+		    <location name="/img" handler="images"/>
+                    {...}
+            </server>
+            <servlet-container name="default">
+                    {...}
+            </servlet-container>
+            <handlers>
+                    {...}
+ 		<file name="images" path="/home/justyna/Documents/STUDIA/RECIPE/images" directory-listing="true"/>
+            </handlers>
+```
 
 
 
