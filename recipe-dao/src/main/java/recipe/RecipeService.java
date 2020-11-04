@@ -25,6 +25,7 @@ public class RecipeService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Recipe> getCollection() {
+        logger.info("/recipes getCollection");
         return memberDao.findAll();
     }
 
@@ -32,6 +33,7 @@ public class RecipeService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Object getOne(@PathParam("id") Long id) {
+        logger.info("/recipes " + id  +  " getCollection");
         return memberDao.findOne(id);
     }
 }
