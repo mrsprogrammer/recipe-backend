@@ -17,9 +17,9 @@ public abstract class AbstractDao<T> {
     protected abstract Class<T> getType();
 
 
-//    public Object findOne(Long id) {
-//        return entityManager.find(getType().getSimpleName(), id);
-//    }
+    public Object findOne(Long id) {
+        return entityManager.find(getType(), id);
+    }
 
     public List<T> findAll() {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();

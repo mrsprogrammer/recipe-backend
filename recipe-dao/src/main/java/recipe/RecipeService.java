@@ -5,9 +5,7 @@ import recipe.jpa.Recipe;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 import java.util.logging.Logger;
@@ -23,11 +21,17 @@ public class RecipeService {
     public RecipeService() {
     }
 
-
+    @Path("/")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Recipe> list() {
-
+    public List<Recipe> getCollection() {
         return memberDao.findAll();
+    }
+
+    @Path("/{id}")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Object getOne(@PathParam("id") Long id) {
+        return memberDao.findOne(id);
     }
 }
