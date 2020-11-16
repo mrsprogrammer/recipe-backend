@@ -14,6 +14,9 @@ public abstract class AbstractDao<T> {
     @PersistenceContext(unitName = "Recipe")
     protected EntityManager entityManager;
 
+    /**
+     * Metoda do zdefiniowania w każdej klasie potomnej - zwraca typ danej klasy JPA dla fasady np. News.class
+     */
     protected abstract Class<T> getType();
 
 
@@ -29,8 +32,6 @@ public abstract class AbstractDao<T> {
         return entityManager.createQuery(cq).getResultList();
     }
 
-
-
     public void save(T entity) {
         entityManager.persist(entity);
     }
@@ -44,9 +45,7 @@ public abstract class AbstractDao<T> {
     }
 
 
-    /**
-     * Metoda do zdefiniowania w każdej klasie potomnej - zwraca typ danej klasy JPA dla fasady np. News.class
-     */
+
 //    protected abstract Class<T> getType();
 //
 //

@@ -1,9 +1,11 @@
-recipe/RecipeService.class
-recipe/jpa/Recipe.class
-recipe/jpa/Member.class
+recipe/jpa/Comment.class
 recipe/JAXRSConfiguration.class
 recipe/dao/AbstractDao.class
+recipe/service/RecipeService.class
 recipe/dao/MemberDao.class
 recipe/CorsFilter.class
-recipe/MemberService.class
+recipe/service/MemberService.class
+recipe/jpa/Recipe.class
+recipe/jpa/Member.class
+recipe/dao/CommentDao.class
 recipe/dao/RecipeDao.class

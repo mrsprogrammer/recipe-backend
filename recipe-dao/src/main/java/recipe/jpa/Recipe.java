@@ -2,6 +2,7 @@ package recipe.jpa;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Collection;
 
 
 @Entity
@@ -28,6 +29,8 @@ public class Recipe {
     @Column(name = "image")
     private String image;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "id_recipe", fetch = FetchType.EAGER)
+    private Collection<Comment> comments;
 
     public Long getId() {
         return id;
@@ -69,7 +72,12 @@ public class Recipe {
         this.image = image;
     }
 
+    public Collection<Comment> getComments() {
+        return comments;
+    }
 
-
+    public void setComments(Collection<Comment> comments) {
+        this.comments = comments;
+    }
 
 }

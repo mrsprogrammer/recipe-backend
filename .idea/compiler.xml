@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="recipe-ear" />
-        <module name="recipe-web" />
         <module name="recipe-dao" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="recipe-web" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -71,7 +71,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"(isHandset$ | async) === false\"\n  >\n    <mat-toolbar>Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/all\">Strona główna</a>\n      <a mat-list-item routerLink=\"/main\">Main</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\"\n      >\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span>Przepisy kulinarne</span>\n    </mat-toolbar>\n    <ng-content></ng-content>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n";
+    __webpack_exports__["default"] = "<mat-sidenav-container class=\"sidenav-container\">\n  <mat-sidenav\n    #drawer\n    class=\"sidenav\"\n    fixedInViewport\n    [attr.role]=\"(isHandset$ | async) ? 'dialog' : 'navigation'\"\n    [mode]=\"(isHandset$ | async) ? 'over' : 'side'\"\n    [opened]=\"(isHandset$ | async) === false\"\n  >\n    <mat-toolbar>Menu</mat-toolbar>\n    <mat-nav-list>\n      <a mat-list-item routerLink=\"/\">Strona główna</a>\n      <a mat-list-item routerLink=\"/main\">Main</a>\n    </mat-nav-list>\n  </mat-sidenav>\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <button\n        type=\"button\"\n        aria-label=\"Toggle sidenav\"\n        mat-icon-button\n        (click)=\"drawer.toggle()\"\n        *ngIf=\"isHandset$ | async\"\n      >\n        <mat-icon aria-label=\"Side nav toggle icon\">menu</mat-icon>\n      </button>\n      <span>Przepisy kulinarne</span>\n    </mat-toolbar>\n    <ng-content></ng-content>\n  </mat-sidenav-content>\n</mat-sidenav-container>\n";
     /***/
   },
 
@@ -96,22 +96,42 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/recipe/recipe.component.html":
-  /*!************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/recipe/recipe.component.html ***!
-    \************************************************************************************/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipe/recipe.component.html":
+  /*!********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipe/recipe.component.html ***!
+    \********************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppRecipeRecipeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppModulesRecipeRecipeComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"grid-container\">\n  <div class=\"grid-item\" *ngFor=\"let recipe of recipes; index as i\">\n    <a mat-list-item routerLink=\"../recipe/{{ recipe.id }}\">\n      <mat-card class=\"card\">\n        <mat-card-header>\n          <mat-card-title>{{ recipe.title }}</mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" />\n        <mat-card-content>\n          <!-- <p>\n          {{ recipe.ingredients }}\n        </p> -->\n          <p>\n            {{ recipe.method }}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </a>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"grid-container\">\n  <div class=\"grid-item\" *ngFor=\"let recipe of recipes; index as i\">\n    <a mat-list-item routerLink=\"{{ recipe.id }}\">\n      <mat-card class=\"card\">\n        <mat-card-header>\n          <mat-card-title>{{ recipe.title }}</mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" />\n        <mat-card-content>\n          <p>\n            {{ recipe.method }}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </a>\n  </div>\n</div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipeId/recipeId.component.html":
+  /*!************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipeId/recipeId.component.html ***!
+    \************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppModulesRecipeIdRecipeIdComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card class=\"header\">\n      <mat-card-title class=\"title\">{{ recipe.title }}</mat-card-title>\n      <img src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" class=\"image\" />\n    </mat-card>\n  </div>\n</div>\n<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card>\n      <mat-card-content>\n        <p class=\"subheader\">Składniki:</p>\n        <p class=\"text\">\n          {{ recipe.ingredients }}\n        </p>\n        <p class=\"subheader\">Wykonanie:</p>\n        <p class=\"text\">\n          {{ recipe.method }}\n        </p>\n      </mat-card-content>\n    </mat-card>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -771,9 +791,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ./recipe/recipe.component */
-    "./src/app/recipe/recipe.component.ts");
+    var _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./modules/recipe/recipe.component */
+    "./src/app/modules/recipe/recipe.component.ts");
+    /* harmony import */
+
+
+    var _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./modules/recipeId/recipeId.component */
+    "./src/app/modules/recipeId/recipeId.component.ts");
 
     var routes = [{
       path: "main",
@@ -782,8 +808,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         title: "Main"
       }
     }, {
-      path: "all",
-      component: _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_5__["Recipe"],
+      path: ":id",
+      component: _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_6__["RecipeId"],
+      data: {
+        title: "Przepis"
+      }
+    }, {
+      path: "",
+      component: _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_5__["Recipe"],
       data: {
         title: "Przepisy kulinarne"
       }
@@ -944,63 +976,70 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./recipe/recipe.component */
-    "./src/app/recipe/recipe.component.ts");
-    /* harmony import */
-
-
-    var _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./layout/menu/menu.component */
     "./src/app/layout/menu/menu.component.ts");
     /* harmony import */
 
 
-    var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./modules/recipe/recipe.component */
+    "./src/app/modules/recipe/recipe.component.ts");
+    /* harmony import */
+
+
+    var _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./modules/recipeId/recipeId.component */
+    "./src/app/modules/recipeId/recipeId.component.ts");
+    /* harmony import */
+
+
+    var _angular_material_button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @angular/material/button */
     "./node_modules/@angular/material/esm2015/button.js");
     /* harmony import */
 
 
-    var _angular_material_card__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @angular/material/card */
     "./node_modules/@angular/material/esm2015/card.js");
     /* harmony import */
 
 
-    var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! @angular/cdk/layout */
     "./node_modules/@angular/cdk/esm2015/layout.js");
     /* harmony import */
 
 
-    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! @angular/material/toolbar */
     "./node_modules/@angular/material/esm2015/toolbar.js");
     /* harmony import */
 
 
-    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @angular/material/sidenav */
     "./node_modules/@angular/material/esm2015/sidenav.js");
     /* harmony import */
 
 
-    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! @angular/material/icon */
     "./node_modules/@angular/material/esm2015/icon.js");
     /* harmony import */
 
 
-    var _angular_material_list__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _angular_material_list__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! @angular/material/list */
     "./node_modules/@angular/material/esm2015/list.js");
     /* harmony import */
 
 
-    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! @angular/material/grid-list */
     "./node_modules/@angular/material/esm2015/grid-list.js"); // components
+    // modules
     // material
 
 
@@ -1009,9 +1048,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_7__["Main"], _recipe_recipe_component__WEBPACK_IMPORTED_MODULE_8__["Recipe"], _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_9__["MenuComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_7__["Main"], _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_9__["Recipe"], _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_10__["RecipeId"], _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_8__["MenuComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["NoopAnimationsModule"], // material modules
-      _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_12__["LayoutModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_11__["MatCardModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_17__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_16__["MatListModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_14__["MatSidenavModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_13__["MatToolbarModule"]],
+      _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_13__["LayoutModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_12__["MatCardModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_18__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_16__["MatIconModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_15__["MatSidenavModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_14__["MatToolbarModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })], AppModule);
@@ -1219,35 +1258,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/recipe/recipe.component.scss":
-  /*!**********************************************!*\
-    !*** ./src/app/recipe/recipe.component.scss ***!
-    \**********************************************/
+  "./src/app/modules/recipe/recipe.component.scss":
+  /*!******************************************************!*\
+    !*** ./src/app/modules/recipe/recipe.component.scss ***!
+    \******************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppRecipeRecipeComponentScss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppModulesRecipeRecipeComponentScss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".card:hover {\n  background-color: rgba(0, 0, 0, 0.04);\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9yZWNpcGUvcmVjaXBlLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9yZWNpcGUvcmVjaXBlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUNBQUE7RUFDQSxlQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9yZWNpcGUvcmVjaXBlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQ6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iLCIuY2FyZDpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNCk7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".card:hover {\n  background-color: rgba(0, 0, 0, 0.04);\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9tb2R1bGVzL3JlY2lwZS9yZWNpcGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21vZHVsZXMvcmVjaXBlL3JlY2lwZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLHFDQUFBO0VBQ0EsZUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9yZWNpcGUvcmVjaXBlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQge1xuICAmOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxufVxuIiwiLmNhcmQ6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
     /***/
   },
 
   /***/
-  "./src/app/recipe/recipe.component.ts":
-  /*!********************************************!*\
-    !*** ./src/app/recipe/recipe.component.ts ***!
-    \********************************************/
+  "./src/app/modules/recipe/recipe.component.ts":
+  /*!****************************************************!*\
+    !*** ./src/app/modules/recipe/recipe.component.ts ***!
+    \****************************************************/
 
   /*! exports provided: Recipe */
 
   /***/
-  function srcAppRecipeRecipeComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppModulesRecipeRecipeComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -1279,7 +1318,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     var _common_global_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ../common/global-constants */
+    /*! ../../common/global-constants */
     "./src/app/common/global-constants.ts");
 
     var Recipe = /*#__PURE__*/function () {
@@ -1320,14 +1359,141 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     Recipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: "app-recipe",
+      selector: "recipe",
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./recipe.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/recipe/recipe.component.html"))["default"],
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipe/recipe.component.html"))["default"],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./recipe.component.scss */
-      "./src/app/recipe/recipe.component.scss"))["default"]]
+      "./src/app/modules/recipe/recipe.component.scss"))["default"]]
     })], Recipe);
+    /***/
+  },
+
+  /***/
+  "./src/app/modules/recipeId/recipeId.component.scss":
+  /*!**********************************************************!*\
+    !*** ./src/app/modules/recipeId/recipeId.component.scss ***!
+    \**********************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppModulesRecipeIdRecipeIdComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".header {\n  align-items: center;\n  display: flex;\n  justify-content: space-between;\n  padding: 0;\n}\n\n.image {\n  width: 80%;\n}\n\n.title {\n  padding: 16px;\n}\n\n.text {\n  font-size: 18px;\n}\n\n.subheader {\n  font-weight: 500;\n  font-size: 24px;\n}\n\n@media (max-width: 1200px) {\n  .header {\n    flex-direction: column;\n  }\n\n  .image {\n    width: 100%;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9tb2R1bGVzL3JlY2lwZUlkL3JlY2lwZUlkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tb2R1bGVzL3JlY2lwZUlkL3JlY2lwZUlkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxVQUFBO0FDQ0Y7O0FERUE7RUFDRSxVQUFBO0FDQ0Y7O0FERUE7RUFDRSxhQUFBO0FDQ0Y7O0FERUE7RUFDRSxlQUFBO0FDQ0Y7O0FERUE7RUFDRSxnQkFBQTtFQUNBLGVBQUE7QUNDRjs7QURFQTtFQUNFO0lBQ0Usc0JBQUE7RUNDRjs7RURFQTtJQUNFLFdBQUE7RUNDRjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9yZWNpcGVJZC9yZWNpcGVJZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXIge1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBhZGRpbmc6IDA7XG59XG5cbi5pbWFnZSB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi50aXRsZSB7XG4gIHBhZGRpbmc6IDE2cHg7XG59XG5cbi50ZXh0IHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuXG4uc3ViaGVhZGVyIHtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgZm9udC1zaXplOiAyNHB4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTIwMHB4KSB7XG4gIC5oZWFkZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cblxuICAuaW1hZ2Uge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG59XG4iLCIuaGVhZGVyIHtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBwYWRkaW5nOiAwO1xufVxuXG4uaW1hZ2Uge1xuICB3aWR0aDogODAlO1xufVxuXG4udGl0bGUge1xuICBwYWRkaW5nOiAxNnB4O1xufVxuXG4udGV4dCB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLnN1YmhlYWRlciB7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIGZvbnQtc2l6ZTogMjRweDtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAuaGVhZGVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG5cbiAgLmltYWdlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/modules/recipeId/recipeId.component.ts":
+  /*!********************************************************!*\
+    !*** ./src/app/modules/recipeId/recipeId.component.ts ***!
+    \********************************************************/
+
+  /*! exports provided: RecipeId */
+
+  /***/
+  function srcAppModulesRecipeIdRecipeIdComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "RecipeId", function () {
+      return RecipeId;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _common_global_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../common/global-constants */
+    "./src/app/common/global-constants.ts");
+
+    var RecipeId = /*#__PURE__*/function () {
+      function RecipeId(http, route) {
+        _classCallCheck(this, RecipeId);
+
+        this.http = http;
+        this.route = route;
+      }
+
+      _createClass(RecipeId, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.route.params.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["switchMap"])(function (_ref) {
+            var id = _ref.id;
+            return _this2.http.get("".concat(_common_global_constants__WEBPACK_IMPORTED_MODULE_5__["GlobalConstants"].apiURL, "/recipes/").concat(id)).pipe(function (recipe) {
+              return recipe;
+            });
+          })).subscribe(function (_a) {
+            var image = _a.image,
+                rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"](_a, ["image"]);
+            _this2.recipe = Object.assign({}, rest, {
+              image: "".concat(_common_global_constants__WEBPACK_IMPORTED_MODULE_5__["GlobalConstants"].imagesURL, "/").concat(image)
+            });
+          });
+        }
+      }]);
+
+      return RecipeId;
+    }();
+
+    RecipeId.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }];
+    };
+
+    RecipeId = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: "recipe-id",
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./recipeId.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipeId/recipeId.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./recipeId.component.scss */
+      "./src/app/modules/recipeId/recipeId.component.scss"))["default"]]
+    })], RecipeId);
     /***/
   },
 
