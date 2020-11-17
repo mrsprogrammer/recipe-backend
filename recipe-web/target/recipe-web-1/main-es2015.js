@@ -71,20 +71,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container\">\n  <div class=\"grid-item\" *ngFor=\"let recipe of recipes; index as i\">\n    <a mat-list-item routerLink=\"{{ recipe.id }}\">\n      <mat-card class=\"card\">\n        <mat-card-header>\n          <mat-card-title>{{ recipe.title }}</mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" />\n        <mat-card-content>\n          <p>\n            {{ recipe.method }}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </a>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card class=\"header\">\n      <mat-card-title class=\"title\">{{ recipe.title }}</mat-card-title>\n      <img src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" class=\"image\" />\n    </mat-card>\n  </div>\n</div>\n<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card>\n      <mat-card-content>\n        <p class=\"subheader\">Składniki:</p>\n        <p class=\"text\">\n          {{ recipe.ingredients }}\n        </p>\n        <p class=\"subheader\">Wykonanie:</p>\n        <p class=\"text\">\n          {{ recipe.method }}\n        </p>\n      </mat-card-content>\n    </mat-card>\n  </div>\n</div>\n<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card>\n      <mat-card-content>\n        <p *ngFor=\"let comment of recipe.comments; index as i\">\n          {{ comment.content }}\n        </p>\n        <!-- <comments /> -->\n      </mat-card-content>\n    </mat-card>\n  </div>\n</div>\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipeId/recipeId.component.html":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipeId/recipeId.component.html ***!
-  \************************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipes/recipes.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipes/recipes.component.html ***!
+  \**********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card class=\"header\">\n      <mat-card-title class=\"title\">{{ recipe.title }}</mat-card-title>\n      <img src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" class=\"image\" />\n    </mat-card>\n  </div>\n</div>\n<div class=\"grid-container\">\n  <div class=\"grid-item grid-item__colspan-4\">\n    <mat-card>\n      <mat-card-content>\n        <p class=\"subheader\">Składniki:</p>\n        <p class=\"text\">\n          {{ recipe.ingredients }}\n        </p>\n        <p class=\"subheader\">Wykonanie:</p>\n        <p class=\"text\">\n          {{ recipe.method }}\n        </p>\n      </mat-card-content>\n    </mat-card>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container\">\n  <div class=\"grid-item\" *ngFor=\"let recipe of recipes; index as i\">\n    <a mat-list-item routerLink=\"{{ recipe.id }}\">\n      <mat-card class=\"card\">\n        <mat-card-header>\n          <mat-card-title>{{ recipe.title }}</mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"{{ recipe.image }}\" alt=\"{{ recipe.title }}\" />\n        <mat-card-content>\n          <p>\n            {{ recipe.method }}\n          </p>\n        </mat-card-content>\n      </mat-card>\n    </a>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -357,8 +357,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
 /* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
-/* harmony import */ var _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/recipe/recipe.component */ "./src/app/modules/recipe/recipe.component.ts");
-/* harmony import */ var _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/recipeId/recipeId.component */ "./src/app/modules/recipeId/recipeId.component.ts");
+/* harmony import */ var _modules_recipes_recipes_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/recipes/recipes.component */ "./src/app/modules/recipes/recipes.component.ts");
+/* harmony import */ var _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/recipe/recipe.component */ "./src/app/modules/recipe/recipe.component.ts");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/global-constants */ "./src/app/common/global-constants.ts");
+
 
 
 
@@ -374,12 +376,12 @@ const routes = [
     },
     {
         path: ":id",
-        component: _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_6__["RecipeId"],
+        component: _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_6__["Recipe"],
         data: { title: "Przepis" },
     },
     {
         path: "",
-        component: _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_5__["Recipe"],
+        component: _modules_recipes_recipes_component__WEBPACK_IMPORTED_MODULE_5__["Recipes"],
         data: { title: "Przepisy kulinarne" },
     },
 ];
@@ -389,7 +391,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
-        providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"], useValue: "/recipe" }],
+        providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["APP_BASE_HREF"], useValue: _common_global_constants__WEBPACK_IMPORTED_MODULE_7__["GlobalConstants"].baseHref }],
     })
 ], AppRoutingModule);
 
@@ -460,8 +462,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
 /* harmony import */ var _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./layout/menu/menu.component */ "./src/app/layout/menu/menu.component.ts");
-/* harmony import */ var _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/recipe/recipe.component */ "./src/app/modules/recipe/recipe.component.ts");
-/* harmony import */ var _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/recipeId/recipeId.component */ "./src/app/modules/recipeId/recipeId.component.ts");
+/* harmony import */ var _modules_recipes_recipes_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/recipes/recipes.component */ "./src/app/modules/recipes/recipes.component.ts");
+/* harmony import */ var _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/recipe/recipe.component */ "./src/app/modules/recipe/recipe.component.ts");
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
 /* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/cdk/layout */ "./node_modules/@angular/cdk/esm2015/layout.js");
@@ -496,7 +498,7 @@ let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_7__["Main"], _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_9__["Recipe"], _modules_recipeId_recipeId_component__WEBPACK_IMPORTED_MODULE_10__["RecipeId"], _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_8__["MenuComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_7__["Main"], _modules_recipes_recipes_component__WEBPACK_IMPORTED_MODULE_9__["Recipes"], _modules_recipe_recipe_component__WEBPACK_IMPORTED_MODULE_10__["Recipe"], _layout_menu_menu_component__WEBPACK_IMPORTED_MODULE_8__["MenuComponent"]],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
@@ -537,6 +539,7 @@ class GlobalConstants {
 }
 GlobalConstants.apiURL = "http://localhost:8080/api";
 GlobalConstants.imagesURL = "http://localhost:8080/img";
+GlobalConstants.baseHref = "/recipes";
 
 
 /***/ }),
@@ -650,7 +653,7 @@ Main = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".card:hover {\n  background-color: rgba(0, 0, 0, 0.04);\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9tb2R1bGVzL3JlY2lwZS9yZWNpcGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21vZHVsZXMvcmVjaXBlL3JlY2lwZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDRTtFQUNFLHFDQUFBO0VBQ0EsZUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9yZWNpcGUvcmVjaXBlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQge1xuICAmOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxufVxuIiwiLmNhcmQ6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".header {\n  align-items: center;\n  display: flex;\n  justify-content: space-between;\n  padding: 0;\n}\n\n.image {\n  width: 80%;\n}\n\n.title {\n  padding: 16px;\n}\n\n.text {\n  font-size: 18px;\n}\n\n.subheader {\n  font-weight: 500;\n  font-size: 24px;\n}\n\n@media (max-width: 1200px) {\n  .header {\n    flex-direction: column;\n  }\n\n  .image {\n    width: 100%;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9tb2R1bGVzL3JlY2lwZS9yZWNpcGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21vZHVsZXMvcmVjaXBlL3JlY2lwZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsVUFBQTtBQ0NGOztBREVBO0VBQ0UsVUFBQTtBQ0NGOztBREVBO0VBQ0UsYUFBQTtBQ0NGOztBREVBO0VBQ0UsZUFBQTtBQ0NGOztBREVBO0VBQ0UsZ0JBQUE7RUFDQSxlQUFBO0FDQ0Y7O0FERUE7RUFDRTtJQUNFLHNCQUFBO0VDQ0Y7O0VERUE7SUFDRSxXQUFBO0VDQ0Y7QUFDRiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvcmVjaXBlL3JlY2lwZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXIge1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBhZGRpbmc6IDA7XG59XG5cbi5pbWFnZSB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi50aXRsZSB7XG4gIHBhZGRpbmc6IDE2cHg7XG59XG5cbi50ZXh0IHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuXG4uc3ViaGVhZGVyIHtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgZm9udC1zaXplOiAyNHB4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTIwMHB4KSB7XG4gIC5oZWFkZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cblxuICAuaW1hZ2Uge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG59XG4iLCIuaGVhZGVyIHtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBwYWRkaW5nOiAwO1xufVxuXG4uaW1hZ2Uge1xuICB3aWR0aDogODAlO1xufVxuXG4udGl0bGUge1xuICBwYWRkaW5nOiAxNnB4O1xufVxuXG4udGV4dCB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLnN1YmhlYWRlciB7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIGZvbnQtc2l6ZTogMjRweDtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAuaGVhZGVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG5cbiAgLmltYWdlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxufSJdfQ== */");
 
 /***/ }),
 
@@ -666,31 +669,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Recipe", function() { return Recipe; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/common/global-constants.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/common/global-constants.ts");
+/* harmony import */ var _recipe_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./recipe.service */ "./src/app/modules/recipe/recipe.service.ts");
+
+
 
 
 
 
 let Recipe = class Recipe {
-    constructor(http) {
-        this.http = http;
-        this.recipes = [];
-    }
-    ngOnInit() {
-        this.http
-            .get(`${_common_global_constants__WEBPACK_IMPORTED_MODULE_3__["GlobalConstants"].apiURL}/recipes`)
-            .subscribe((recipes) => {
-            console.log(recipes);
-            this.recipes = recipes.map((_a) => {
-                var { image, method } = _a, rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"](_a, ["image", "method"]);
-                return (Object.assign({}, rest, { image: `${_common_global_constants__WEBPACK_IMPORTED_MODULE_3__["GlobalConstants"].imagesURL}/${image}`, method: method.substr(0, 250) + "..." }));
-            });
+    constructor(route, recipeService) {
+        this.route = route;
+        this.route.params
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(({ id }) => recipeService.getRecipe(id)))
+            .subscribe((_a) => {
+            var { image } = _a, rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"](_a, ["image"]);
+            this.recipe = Object.assign({}, rest, { image: `${_common_global_constants__WEBPACK_IMPORTED_MODULE_4__["GlobalConstants"].imagesURL}/${image}` });
         });
     }
+    ngOnInit() { }
 };
 Recipe.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: _recipe_service__WEBPACK_IMPORTED_MODULE_5__["RecipeService"] }
 ];
 Recipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -704,68 +707,135 @@ Recipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/modules/recipeId/recipeId.component.scss":
-/*!**********************************************************!*\
-  !*** ./src/app/modules/recipeId/recipeId.component.scss ***!
-  \**********************************************************/
+/***/ "./src/app/modules/recipe/recipe.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/modules/recipe/recipe.service.ts ***!
+  \**************************************************/
+/*! exports provided: RecipeService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeService", function() { return RecipeService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/common/global-constants.ts");
+
+
+
+
+let RecipeService = class RecipeService {
+    constructor(http) {
+        this.http = http;
+        this.getRecipe = (id) => this.http
+            .get(`${_common_global_constants__WEBPACK_IMPORTED_MODULE_3__["GlobalConstants"].apiURL}/recipes/${id}`)
+            .pipe((recipe) => recipe);
+    }
+};
+RecipeService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+RecipeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: "root",
+    })
+], RecipeService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/modules/recipes/recipes.component.scss":
+/*!********************************************************!*\
+  !*** ./src/app/modules/recipes/recipes.component.scss ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".header {\n  align-items: center;\n  display: flex;\n  justify-content: space-between;\n  padding: 0;\n}\n\n.image {\n  width: 80%;\n}\n\n.title {\n  padding: 16px;\n}\n\n.text {\n  font-size: 18px;\n}\n\n.subheader {\n  font-weight: 500;\n  font-size: 24px;\n}\n\n@media (max-width: 1200px) {\n  .header {\n    flex-direction: column;\n  }\n\n  .image {\n    width: 100%;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9tb2R1bGVzL3JlY2lwZUlkL3JlY2lwZUlkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9tb2R1bGVzL3JlY2lwZUlkL3JlY2lwZUlkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxVQUFBO0FDQ0Y7O0FERUE7RUFDRSxVQUFBO0FDQ0Y7O0FERUE7RUFDRSxhQUFBO0FDQ0Y7O0FERUE7RUFDRSxlQUFBO0FDQ0Y7O0FERUE7RUFDRSxnQkFBQTtFQUNBLGVBQUE7QUNDRjs7QURFQTtFQUNFO0lBQ0Usc0JBQUE7RUNDRjs7RURFQTtJQUNFLFdBQUE7RUNDRjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvbW9kdWxlcy9yZWNpcGVJZC9yZWNpcGVJZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXIge1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBhZGRpbmc6IDA7XG59XG5cbi5pbWFnZSB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi50aXRsZSB7XG4gIHBhZGRpbmc6IDE2cHg7XG59XG5cbi50ZXh0IHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuXG4uc3ViaGVhZGVyIHtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgZm9udC1zaXplOiAyNHB4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTIwMHB4KSB7XG4gIC5oZWFkZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cblxuICAuaW1hZ2Uge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG59XG4iLCIuaGVhZGVyIHtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBwYWRkaW5nOiAwO1xufVxuXG4uaW1hZ2Uge1xuICB3aWR0aDogODAlO1xufVxuXG4udGl0bGUge1xuICBwYWRkaW5nOiAxNnB4O1xufVxuXG4udGV4dCB7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLnN1YmhlYWRlciB7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIGZvbnQtc2l6ZTogMjRweDtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAuaGVhZGVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB9XG5cbiAgLmltYWdlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".card:hover {\n  background-color: rgba(0, 0, 0, 0.04);\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2p1c3R5bmEvRG9jdW1lbnRzL1NUVURJQS9SRUNJUEUvZnJvbnRlbmQvc3JjL2FwcC9tb2R1bGVzL3JlY2lwZXMvcmVjaXBlcy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbW9kdWxlcy9yZWNpcGVzL3JlY2lwZXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRSxxQ0FBQTtFQUNBLGVBQUE7QUNBSiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvcmVjaXBlcy9yZWNpcGVzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQge1xuICAmOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxufVxuIiwiLmNhcmQ6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */");
 
 /***/ }),
 
-/***/ "./src/app/modules/recipeId/recipeId.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/modules/recipeId/recipeId.component.ts ***!
-  \********************************************************/
-/*! exports provided: RecipeId */
+/***/ "./src/app/modules/recipes/recipes.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/modules/recipes/recipes.component.ts ***!
+  \******************************************************/
+/*! exports provided: Recipes */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeId", function() { return RecipeId; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Recipes", function() { return Recipes; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/common/global-constants.ts");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/common/global-constants.ts");
+/* harmony import */ var _recipes_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./recipes.service */ "./src/app/modules/recipes/recipes.service.ts");
 
 
 
 
-
-
-let RecipeId = class RecipeId {
-    constructor(http, route) {
-        this.http = http;
-        this.route = route;
-    }
-    ngOnInit() {
-        this.route.params
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["switchMap"])(({ id }) => this.http
-            .get(`${_common_global_constants__WEBPACK_IMPORTED_MODULE_5__["GlobalConstants"].apiURL}/recipes/${id}`)
-            .pipe((recipe) => recipe)))
-            .subscribe((_a) => {
-            var { image } = _a, rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"](_a, ["image"]);
-            this.recipe = Object.assign({}, rest, { image: `${_common_global_constants__WEBPACK_IMPORTED_MODULE_5__["GlobalConstants"].imagesURL}/${image}` });
+let Recipes = class Recipes {
+    constructor(recipesService) {
+        this.recipes = [];
+        recipesService.getRecipes().subscribe((recipes) => {
+            this.recipes = recipes.map((_a) => {
+                var { image, method } = _a, rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"](_a, ["image", "method"]);
+                return (Object.assign({}, rest, { image: `${_common_global_constants__WEBPACK_IMPORTED_MODULE_2__["GlobalConstants"].imagesURL}/${image}`, method: method.substr(0, 250) + "..." }));
+            });
         });
     }
+    ngOnInit() { }
 };
-RecipeId.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+Recipes.ctorParameters = () => [
+    { type: _recipes_service__WEBPACK_IMPORTED_MODULE_3__["RecipesService"] }
 ];
-RecipeId = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+Recipes = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: "recipe-id",
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipeId.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipeId/recipeId.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipeId.component.scss */ "./src/app/modules/recipeId/recipeId.component.scss")).default]
+        selector: "recipes",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipes.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modules/recipes/recipes.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipes.component.scss */ "./src/app/modules/recipes/recipes.component.scss")).default]
     })
-], RecipeId);
+], Recipes);
+
+
+
+/***/ }),
+
+/***/ "./src/app/modules/recipes/recipes.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/modules/recipes/recipes.service.ts ***!
+  \****************************************************/
+/*! exports provided: RecipesService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipesService", function() { return RecipesService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _common_global_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/global-constants */ "./src/app/common/global-constants.ts");
+
+
+
+
+let RecipesService = class RecipesService {
+    constructor(http) {
+        this.http = http;
+        this.getRecipes = () => this.http.get(`${_common_global_constants__WEBPACK_IMPORTED_MODULE_3__["GlobalConstants"].apiURL}/recipes`);
+    }
+};
+RecipesService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+RecipesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: "root",
+    })
+], RecipesService);
 
 
 
