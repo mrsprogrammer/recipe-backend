@@ -8,20 +8,20 @@
             Redirect from root to frontend
         </note>
         <from>^/$</from>
-        <to type="redirect">recipe</to>
+        <to type="redirect">recipes</to>
     </rule>
     <rule>
         <note>
             Redirect from concrete HTML to view path
         </note>
         <from>^/index.html(.*)</from>
-        <to type="redirect">recipe</to>
+        <to type="redirect">recipes</to>
     </rule>
     <rule>
         <note>
             Enable client side routing by forwarding all frontend requests to index.html
         </note>
-        <from>^/recipe/?(.*)</from>
+        <from>^/recipes/?(.*)</from>
         <to>/index.html</to>
     </rule>
 </urlrewrite>

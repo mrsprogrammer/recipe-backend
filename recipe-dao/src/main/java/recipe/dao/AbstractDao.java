@@ -32,7 +32,7 @@ public abstract class AbstractDao<T> {
         return entityManager.createQuery(cq).getResultList();
     }
 
-    public void save(T entity) {
+    public void create(T entity) {
         entityManager.persist(entity);
     }
 
@@ -43,7 +43,6 @@ public abstract class AbstractDao<T> {
     public void delete(T entity) {
         entityManager.remove(entity);
     }
-
 
 
 //    protected abstract Class<T> getType();

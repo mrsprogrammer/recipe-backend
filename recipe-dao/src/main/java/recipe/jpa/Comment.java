@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 public class Comment {
     @Id
     @GeneratedValue
-    @Column(name = "id", nullable=false)
+    @Column(name = "id")
     private Long id;
 
     @NotNull

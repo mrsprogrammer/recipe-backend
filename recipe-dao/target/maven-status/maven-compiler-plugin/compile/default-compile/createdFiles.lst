@@ -8,4 +8,5 @@ recipe/service/MemberService.class
 recipe/jpa/Recipe.class
 recipe/jpa/Member.class
 recipe/dao/CommentDao.class
+recipe/service/CommentService.class
 recipe/dao/RecipeDao.class

@@ -6,6 +6,7 @@
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/CommentDao.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/MemberDao.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/RecipeDao.java
+/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/service/CommentService.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/AbstractDao.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/jpa/Comment.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/CorsFilter.java

@@ -10,7 +10,7 @@ import java.util.Collection;
 public class Recipe {
     @Id
     @GeneratedValue
-    @Column(name = "id", nullable=false)
+    @Column(name = "id")
     private Long id;
 
     @NotNull
