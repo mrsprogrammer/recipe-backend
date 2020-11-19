@@ -414,6 +414,11 @@
           key: "ngOnInit",
           value: function ngOnInit() {}
         }, {
+          key: "closeCommentAddForm",
+          value: function closeCommentAddForm() {
+            this.isCommentAddFormOpened = false;
+          }
+        }, {
           key: "openCommentAddForm",
           value: function openCommentAddForm() {
             this.isCommentAddFormOpened = true;
@@ -757,9 +762,8 @@
 
         this.http = http;
 
-        this.addComment = function (body) {
-          console.log("addComment", body, {});
-          return _this3.http.post("".concat(_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].apiURL, "/comments/create"), body);
+        this.addComment = function (payload) {
+          return _this3.http.post("".concat(_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].apiURL, "/comments/create"), payload);
         };
       };
 
@@ -1577,7 +1581,7 @@
           value: function onSubmit() {
             this.commentAddService.addComment(Object.assign({
               id_recipe: this.recipeId.toString()
-            }, this.form.value)).subscribe();
+            }, this.form.value)).subscribe(function () {});
           }
         }]);
 

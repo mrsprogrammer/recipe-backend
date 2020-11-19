@@ -27,11 +27,10 @@ public class CommentService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response createComment(Comment newComment) {
-        logger.info("newComment: " + newComment);
+    public Response createComment(Comment payload) {
 
-         commentDao.create(newComment);
-         return Response.ok().build();
+         Comment comment = commentDao.createComment(payload);
+         return Response.ok().entity(comment).build();
     }
 
 

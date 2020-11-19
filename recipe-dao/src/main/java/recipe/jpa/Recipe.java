@@ -2,12 +2,13 @@ package recipe.jpa;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Collection;
 
 
 @Entity
 @Table(name = "Recipe")
-public class Recipe {
+public class Recipe implements Serializable {
     @Id
     @GeneratedValue
     @Column(name = "id")

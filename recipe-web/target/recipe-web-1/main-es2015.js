@@ -197,6 +197,9 @@ class Comments {
         this.isCommentAddFormOpened = false;
     }
     ngOnInit() { }
+    closeCommentAddForm() {
+        this.isCommentAddFormOpened = false;
+    }
     openCommentAddForm() {
         this.isCommentAddFormOpened = true;
     }
@@ -349,10 +352,7 @@ __webpack_require__.r(__webpack_exports__);
 class CommentAddService {
     constructor(http) {
         this.http = http;
-        this.addComment = (body) => {
-            console.log("addComment", body, {});
-            return this.http.post(`${_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].apiURL}/comments/create`, body);
-        };
+        this.addComment = (payload) => this.http.post(`${_common_global_constants__WEBPACK_IMPORTED_MODULE_1__["GlobalConstants"].apiURL}/comments/create`, payload);
     }
 }
 CommentAddService.ɵfac = function CommentAddService_Factory(t) { return new (t || CommentAddService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"])); };
@@ -786,7 +786,7 @@ class CommentAdd {
     onSubmit() {
         this.commentAddService
             .addComment(Object.assign({ id_recipe: this.recipeId.toString() }, this.form.value))
-            .subscribe();
+            .subscribe(() => { });
     }
 }
 CommentAdd.ɵfac = function CommentAdd_Factory(t) { return new (t || CommentAdd)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_comment_add_service__WEBPACK_IMPORTED_MODULE_2__["CommentAddService"])); };

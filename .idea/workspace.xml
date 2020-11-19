@@ -2,32 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="141616bc-1ab7-4d9d-94c5-61f20ea0fad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/AbstractDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/CommentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/src/main/webapp/WEB-INF/urlrewrite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/src/main/webapp/WEB-INF/urlrewrite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1.war" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/WEB-INF/urlrewrite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/WEB-INF/urlrewrite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/polyfills-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles-es2015.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles-es2015.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles-es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles-es5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +68,9 @@
       <workItem from="1604515489800" duration="2556000" />
       <workItem from="1605544764654" duration="7543000" />
       <workItem from="1605632419792" duration="3012000" />
-      <workItem from="1605717677027" duration="4131000" />
+      <workItem from="1605717677027" duration="6521000" />
+      <workItem from="1605785300280" duration="1214000" />
+      <workItem from="1605804600554" duration="2300000" />
     </task>
     <servers />
   </component>
