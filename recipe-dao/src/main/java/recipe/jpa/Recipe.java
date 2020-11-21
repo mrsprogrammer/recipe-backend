@@ -30,6 +30,10 @@ public class Recipe implements Serializable {
     @Column(name = "image")
     private String image;
 
+    @NotNull
+    @Column(name = "categoryName", nullable = false)
+    private String categoryName;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "id_recipe", fetch = FetchType.EAGER)
     private Collection<Comment> comments;
 
@@ -71,6 +75,14 @@ public class Recipe implements Serializable {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 
     public Collection<Comment> getComments() {

@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 @Stateless
 @Path("comments")
 public class CommentService {
-    private static final Logger logger = Logger.getLogger("Comment::CommentService");
+    private static final Logger logger = Logger.getLogger("service::CommentService");
 
 
     @Inject
