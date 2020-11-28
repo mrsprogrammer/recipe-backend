@@ -1,7 +1,9 @@
 package recipe.service;
 
+import recipe.dao.UserDao;
 import recipe.jpa.User;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -14,22 +16,17 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
+
 import static javax.ws.rs.core.Response.Status.UNAUTHORIZED;
+
 import java.util.logging.Logger;
 
-@Path("/users")
-@Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
-@Transactional
+@Stateless
+@Path("users")
+
 public class UserService {
-    // ======================================
-    // =          Injection Points          =
-    // ======================================
 
-//    @Context
-//    private UriInfo uriInfo;
-
-    private Logger logger;
+    private static final Logger logger = Logger.getLogger("service::UserService");
 
 //    @Inject
 //    private KeyGenerator keyGenerator;
@@ -37,24 +34,28 @@ public class UserService {
 //    @PersistenceContext
 //    private EntityManager em;
 
-    // ======================================
-    // =          Business methods          =
-    // ======================================
+
+    @Inject
+    private UserDao userDao;
+
+    public UserService() {
+    }
 
     @POST
     @Path("/login")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response authenticateUser(User payload
-//            @FormParam("login") String login,
-//                                     @FormParam("password") String password
-    ) {
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response authenticateUser(User payload) {
 
         try {
+            logger.info("#### login/payload : " + payload.getLogin() + payload.getPassword());
 
-            logger.info("#### login/payload : " + payload );
+            User user = userDao.findUserByLoginPassword(payload);
 
-            // Authenticate the user using the credentials provided
-//            authenticate(login, password);
+            if (user == null) {
+                logger.info("user === null" );
+                throw new SecurityException("Invalid user/password");
+            }
 
             // Issue a token for the user
 //            String token = issueToken(login);
@@ -90,8 +91,6 @@ public class UserService {
 //        return jwtToken;
 //
 //    }
-
-
 
 
 //
