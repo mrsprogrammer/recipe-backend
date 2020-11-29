@@ -33,8 +33,16 @@ public class UserDao extends AbstractDao {
         Predicate correctPassword = cb.equal(u.get("password"), encodedPassword);
 
         cq.select(u).where(cb.and(correctLogin, correctPassword));
-        return entityManager.createQuery(cq).getSingleResult();
 
+        User user = null;
+        try {
+            user = entityManager.createQuery(cq).getSingleResult();
+        } catch (NoResultException nre) {
+
+        }
+        return user;
 
     }
 }
+
+
