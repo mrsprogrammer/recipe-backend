@@ -9,7 +9,6 @@
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/JAXRSConfiguration.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/jpa/Recipe.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/UserDao.java
-/home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/utils/KeyGenerator.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/service/CommentService.java
 /home/justyna/Documents/STUDIA/RECIPE/backend/recipe-dao/src/main/java/recipe/dao/AbstractDao.java

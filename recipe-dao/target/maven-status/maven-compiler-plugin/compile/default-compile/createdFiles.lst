@@ -6,7 +6,6 @@ recipe/filter/JWTTokenRequired.class
 recipe/dao/AbstractDao.class
 recipe/service/RecipeService.class
 recipe/CorsFilter.class
-recipe/utils/KeyGenerator.class
 recipe/service/UserService.class
 recipe/utils/SecurityUtils.class
 recipe/jpa/Recipe.class

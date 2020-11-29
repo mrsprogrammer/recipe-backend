@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 
 public class SecurityUtils {
     private static final Logger logger = Logger.getLogger("SecurityUtils");
-
     static final String SECRET_KEY = "super-secret-recipe-key";
 
     public static String encodePassword(String password) {
@@ -29,16 +28,7 @@ public class SecurityUtils {
         SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
         byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(SECRET_KEY);
         Key key = new SecretKeySpec(apiKeySecretBytes, signatureAlgorithm.getJcaName());
-        logger.info("generateKey key: " + key +" ,generateKey key.getEncoded: " + key.getEncoded() + " ,generateKey key.hashCode: " + key.hashCode() + " ,generateKey key.toString: " + key.toString() );
         return key;
     }
 
-
-    public static String encode(byte[] bytes) {
-        return Base64.getUrlEncoder().withoutPadding().encodeToString(bytes);
-    }
-
-    public static String decode(String encodedString) {
-        return new String(Base64.getUrlDecoder().decode(encodedString));
-    }
 }

@@ -55,7 +55,6 @@ public class RecipeService {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Object getOne(@PathParam("id") Long id) {
-        logger.info("/recipes " + id + " getOne");
         return recipeDao.findOne(id);
     }
 }
