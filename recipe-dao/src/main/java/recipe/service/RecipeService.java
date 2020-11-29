@@ -1,6 +1,7 @@
 package recipe.service;
 
 import recipe.dao.RecipeDao;
+import recipe.filter.JWTTokenRequired;
 import recipe.jpa.Recipe;
 
 import javax.ejb.Stateless;
@@ -24,6 +25,7 @@ public class RecipeService {
     @Path("/")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public List<Recipe> getAll() {
         return recipeDao.findAll();
     }

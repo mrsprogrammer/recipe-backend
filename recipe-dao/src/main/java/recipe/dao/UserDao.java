@@ -1,8 +1,7 @@
 package recipe.dao;
 
-import recipe.jpa.Recipe;
 import recipe.jpa.User;
-import recipe.utils.PasswordUtils;
+import recipe.utils.SecurityUtils;
 
 import javax.ejb.Stateless;
 import javax.persistence.*;
@@ -27,8 +26,8 @@ public class UserDao extends AbstractDao {
         CriteriaQuery<User> cq = cb.createQuery(User.class);
         Root<User> u = cq.from(User.class);
 
-        String encodedPassword = PasswordUtils.encodePassword(payload.getPassword());
-//        logger.info("encodedPassword: " + encodedPassword);
+        String encodedPassword = SecurityUtils.encodePassword(payload.getPassword());
+        logger.info("encodedPassword: " + encodedPassword);
         Predicate correctLogin = cb.equal(u.get("login"), payload.getLogin());
         Predicate correctPassword = cb.equal(u.get("password"), encodedPassword);
 

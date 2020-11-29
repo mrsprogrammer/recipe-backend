@@ -1,5 +1,4 @@
 recipe/jpa/Comment.class
-recipe/utils/PasswordUtils.class
 recipe/JAXRSConfiguration.class
 recipe/dao/UserDao.class
 recipe/jpa/User.class
@@ -7,9 +6,10 @@ recipe/filter/JWTTokenRequired.class
 recipe/dao/AbstractDao.class
 recipe/service/RecipeService.class
 recipe/CorsFilter.class
+recipe/utils/KeyGenerator.class
 recipe/service/UserService.class
+recipe/utils/SecurityUtils.class
 recipe/jpa/Recipe.class
-recipe/utils/KeyUtils.class
 recipe/dao/CommentDao.class
 recipe/filter/JWTTokenRequiredFilter.class
 recipe/service/CommentService.class

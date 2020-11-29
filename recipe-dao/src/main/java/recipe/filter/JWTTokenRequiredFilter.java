@@ -4,7 +4,8 @@ import io.jsonwebtoken.Jwts;
 
 import javax.annotation.Priority;
 
-import recipe.utils.KeyUtils;
+import recipe.utils.KeyGenerator;
+import recipe.utils.SecurityUtils;
 
 import javax.ws.rs.NotAuthorizedException;
 import javax.ws.rs.Priorities;
@@ -14,36 +15,31 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
+import java.security.Key;
 import java.util.logging.Logger;
 
 @Provider
 @JWTTokenRequired
 @Priority(Priorities.AUTHENTICATION)
 public class JWTTokenRequiredFilter implements ContainerRequestFilter {
-
-    private Logger logger;
-    private KeyUtils keyGenerator;
+    private static final Logger logger = Logger.getLogger("JWTTokenRequiredFilter");
 
     @Override
-    public void filter(ContainerRequestContext requestContext) throws IOException {
+    public void filter(ContainerRequestContext requestContext) throws NotAuthorizedException {
 
         // Get the HTTP Authorization header from the request
-        String authorizationHeader = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);
-        logger.info("#### authorizationHeader : " + authorizationHeader);
+        String token = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);
+        logger.info("#### token : " + token);
 
-        // Check if the HTTP Authorization header is present and formatted correctly
-        if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
-            logger.severe("#### invalid authorizationHeader : " + authorizationHeader);
+        // Check if the HTTP Authorization header is present
+        if (token == null) {
+            logger.severe("#### invalid authorizationHeader : ");
             throw new NotAuthorizedException("Authorization header must be provided");
         }
 
-        // Extract the token from the HTTP Authorization header
-        String token = authorizationHeader.substring("Bearer".length()).trim();
-
         try {
-
             // Validate the token
-            java.security.Key key = keyGenerator.generateKey();
+            Key key = SecurityUtils.generateKey();
             Jwts.parser().setSigningKey(key).parseClaimsJws(token);
             logger.info("#### valid token : " + token);
 
