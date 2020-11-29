@@ -3,11 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="141616bc-1ab7-4d9d-94c5-61f20ea0fad4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/filter/JWTTokenRequiredFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/filter/JWTTokenRequiredFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/RecipeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/KeyGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/utils/SecurityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/utils/SecurityUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/recipe-dao-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/recipe-dao-1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/recipe.ear" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/recipe.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-dao.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-dao.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1.war" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1.war" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +111,7 @@
       <workItem from="1606330623470" duration="3767000" />
       <workItem from="1606420917569" duration="2653000" />
       <workItem from="1606571886440" duration="19772000" />
-      <workItem from="1606643393918" duration="12455000" />
+      <workItem from="1606643393918" duration="13859000" />
     </task>
     <servers />
   </component>

@@ -65,12 +65,12 @@ public class UserService {
     private String createJWTToken(JSONObject userPayload) {
         Integer sub = userPayload.getInt("id");
         String aud = userPayload.getString("role");
-        // token expires after 30 minutes
+        // token expires after 24 hours
         Key key = SecurityUtils.generateKey();
         String token = Jwts.builder()
                 .setSubject(sub.toString())
                 .setAudience(aud)
-                .setExpiration(toDate(LocalDateTime.now().plusMinutes(30L)))
+                .setExpiration(toDate(LocalDateTime.now().plusHours(24L)))
                 .signWith(SignatureAlgorithm.HS512, key)
                 .compact();
         logger.info("Generating token for a key : " + token + " - " + key);
