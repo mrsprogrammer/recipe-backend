@@ -25,7 +25,7 @@ public class RecipeService {
     @Path("/")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @JWTTokenRequired
+//    @JWTTokenRequired
     public List<Recipe> getAll() {
         return recipeDao.findAll();
     }

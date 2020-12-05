@@ -45,7 +45,8 @@ public class UserService {
             JSONObject userPayload = authenticate(payload);
             String token = createJWTToken(userPayload);
 
-            return Response.ok().header(AUTHORIZATION, token).build();
+            JSONObject entity = new JSONObject().put("token", token);
+            return Response.ok().header(AUTHORIZATION, "Bearer " + token).entity(entity).build();
         } catch (Exception e) {
             return Response.status(UNAUTHORIZED).build();
         }

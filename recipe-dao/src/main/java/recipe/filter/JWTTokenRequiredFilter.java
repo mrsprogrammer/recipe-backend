@@ -22,13 +22,16 @@ public class JWTTokenRequiredFilter implements ContainerRequestFilter {
 
     @Override
     public void filter(ContainerRequestContext requestContext) throws NotAuthorizedException {
-        String token = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);
+        String authorizationHeader = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);
 
         // Check if the HTTP Authorization header is present
-        if (token == null) {
+        if (authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
             logger.info("Authorization header must be provided");
             throw new NotAuthorizedException("Authorization header must be provided");
         }
+
+        // Extract the token from the HTTP Authorization header
+        String token = authorizationHeader.substring("Bearer".length()).trim();
 
         try {
             Key key = SecurityUtils.generateKey();
