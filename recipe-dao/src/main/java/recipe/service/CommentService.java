@@ -1,6 +1,7 @@
 package recipe.service;
 
 import recipe.dao.CommentDao;
+import recipe.filter.JWTTokenRequired;
 import recipe.jpa.Comment;
 
 import javax.ejb.Stateless;
@@ -27,6 +28,7 @@ public class CommentService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public Response createComment(Comment payload) {
 
          Comment comment = commentDao.createComment(payload);

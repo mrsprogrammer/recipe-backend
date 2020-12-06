@@ -8,7 +8,9 @@
         <!-- If you are running in a production environment, add a managed
            data source, the example data source is just for proofs of concept! -->
         <jta-data-source>java:jboss/datasources/Recipe</jta-data-source>
-        <class>recipe.jpa.Member</class>
+<!--        <class>recipe.jpa.Comment</class>-->
+<!--        <class>recipe.jpa.Recipe</class>-->
+<!--        <class>recipe.jpa.User</class>-->
         <properties>
             <!-- Properties for Hibernate -->
             <!--           <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
