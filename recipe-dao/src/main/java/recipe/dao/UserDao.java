@@ -27,7 +27,6 @@ public class UserDao extends AbstractDao {
         Root<User> u = cq.from(User.class);
 
         String encodedPassword = SecurityUtils.encodePassword(payload.getPassword());
-        logger.info("encodedPassword: " + encodedPassword);
         Predicate correctLogin = cb.equal(u.get("login"), payload.getLogin());
         Predicate correctPassword = cb.equal(u.get("password"), encodedPassword);
 
@@ -40,7 +39,15 @@ public class UserDao extends AbstractDao {
 
         }
         return user;
+    }
 
+    public User createUser(User payload) {
+        User user = new User();
+        user.setLogin(payload.getLogin());
+        String encodedPassword = SecurityUtils.encodePassword(payload.getPassword());
+        user.setPassword(encodedPassword);
+        create(user);
+        return user;
     }
 }
 

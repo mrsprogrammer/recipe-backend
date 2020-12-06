@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="141616bc-1ab7-4d9d-94c5-61f20ea0fad4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/filter/JWTTokenRequiredFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/filter/JWTTokenRequiredFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/RecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java" afterDir="false" />
     </list>
@@ -111,7 +110,7 @@
       <workItem from="1606850048768" duration="1917000" />
       <workItem from="1607014302927" duration="949000" />
       <workItem from="1607170868466" duration="3687000" />
-      <workItem from="1607254548029" duration="3842000" />
+      <workItem from="1607254548029" duration="7767000" />
     </task>
     <servers />
   </component>

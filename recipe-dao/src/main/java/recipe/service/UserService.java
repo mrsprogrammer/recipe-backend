@@ -82,47 +82,15 @@ public class UserService {
         return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
     }
 
-//
-//    @POST
-//    public Response create(User user) {
-//        em.persist(user);
-//        return Response.created(uriInfo.getAbsolutePathBuilder().path(user.getId()).build()).build();
-//    }
-//
-//    @GET
-//    @Path("/{id}")
-//    public Response findById(@PathParam("id") String id) {
-//        User user = em.find(User.class, id);
-//
-//        if (user == null)
-//            return Response.status(NOT_FOUND).build();
-//
-//        return Response.ok(user).build();
-//    }
-//
-//    @GET
-//    public Response findAllUsers() {
-//        TypedQuery<User> query = em.createNamedQuery(User.FIND_ALL, User.class);
-//        List<User> allUsers = query.getResultList();
-//
-//        if (allUsers == null)
-//            return Response.status(NOT_FOUND).build();
-//
-//        return Response.ok(allUsers).build();
-//    }
-//
-//    @DELETE
-//    @Path("/{id}")
-//    public Response remove(@PathParam("id") String id) {
-//        em.remove(em.getReference(User.class, id));
-//        return Response.noContent().build();
-//    }
-//
-//    // ======================================
-//    // =          Private methods           =
-//    // ======================================
-//
-//    private Date toDate(LocalDateTime localDateTime) {
-//        return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
-//    }
+
+    @POST
+    @Path("/register")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response create(User payload) {
+        User user = userDao.createUser(payload);
+        JSONObject json = new JSONObject().put("id", user.getId());
+        return Response.ok().entity(json).build();
+    }
+
 }

@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "User")
-public class User  implements Serializable {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue
@@ -21,9 +21,8 @@ public class User  implements Serializable {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @NotNull
     @Column(name = "role", nullable = false)
-    private String role;
+    private String role = "user";
 
     public Long getId() {
         return id;
