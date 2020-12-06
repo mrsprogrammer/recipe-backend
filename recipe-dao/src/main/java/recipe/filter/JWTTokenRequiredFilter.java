@@ -36,6 +36,7 @@ public class JWTTokenRequiredFilter implements ContainerRequestFilter {
         try {
             Key key = SecurityUtils.generateKey();
             Jwts.parser().setSigningKey(key).parseClaimsJws(token);
+
             logger.info("Valid token : " + token);
 
         } catch (Exception e) {

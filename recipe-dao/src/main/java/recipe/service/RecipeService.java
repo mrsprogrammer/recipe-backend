@@ -25,7 +25,7 @@ public class RecipeService {
     @Path("/")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-//    @JWTTokenRequired
+    @JWTTokenRequired
     public List<Recipe> getAll() {
         return recipeDao.findAll();
     }
@@ -33,6 +33,7 @@ public class RecipeService {
     @Path("/cakes")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public List<Recipe> getCakes() {
         return recipeDao.findRecipesByCategoryName("cakes");
     }
@@ -40,6 +41,7 @@ public class RecipeService {
     @Path("/salads")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public List<Recipe> getSalads() {
         return recipeDao.findRecipesByCategoryName("salads");
     }
@@ -47,6 +49,7 @@ public class RecipeService {
     @Path("/soups")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public List<Recipe> getSoups() {
         return recipeDao.findRecipesByCategoryName("soups");
     }
@@ -54,6 +57,7 @@ public class RecipeService {
     @Path("/{id}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public Object getOne(@PathParam("id") Long id) {
         return recipeDao.findOne(id);
     }

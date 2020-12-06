@@ -28,6 +28,7 @@ public class CommentService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
+    @JWTTokenRequired
     public Response createComment(Comment payload) {
 
          Comment comment = commentDao.createComment(payload);

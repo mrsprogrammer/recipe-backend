@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class SecurityUtils {
     private static final Logger logger = Logger.getLogger("SecurityUtils");
-    static final String SECRET_KEY = "super-secret-recipe-key";
+    static final String SECRET_KEY = "ghfgfh fgh fhg f";
 
     public static String encodePassword(String password) {
         try {
