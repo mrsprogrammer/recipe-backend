@@ -13,8 +13,9 @@
     <packaging>war</packaging>
     <name>recipe Web module</name>
 
-<!-- set your settings   -->
+
     <properties>
+        <!-- TODO: set your settings-->
         <web.app.directory>/home/justyna/Documents/STUDIA/RECIPE/frontend</web.app.directory>
         <build.web.app.directory>/home/justyna/Documents/STUDIA/RECIPE/frontend/dist/recipe
         </build.web.app.directory>
