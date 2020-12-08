@@ -1,12 +1,9 @@
 package recipe.dao;
 
-import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import java.io.Serializable;
-import java.sql.SQLException;
 import java.util.List;
 
 public abstract class AbstractDao<T> {

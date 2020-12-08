@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 
 @Stateless
 @Path("comments")
+@JWTTokenRequired
 public class CommentService {
     private static final Logger logger = Logger.getLogger("service::CommentService");
 
@@ -28,7 +29,6 @@ public class CommentService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    @JWTTokenRequired
     public Response createComment(Comment payload) {
 
          Comment comment = commentDao.createComment(payload);
