@@ -74,7 +74,7 @@ public class UserService {
                 .setExpiration(toDate(LocalDateTime.now().plusHours(24L)))
                 .signWith(SignatureAlgorithm.HS512, key)
                 .compact();
-        logger.info("Generating token for a key : " + token + " - " + key);
+        logger.info("Generating token for a key : " + token);
         return token;
     }
 
