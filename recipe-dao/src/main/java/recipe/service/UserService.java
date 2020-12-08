@@ -90,7 +90,7 @@ public class UserService {
     public Response create(User payload) {
         User user = userDao.createUser(payload);
         JSONObject json = new JSONObject().put("id", user.getId());
-        return Response.ok().entity(json).build();
+        return Response.ok().entity(json.toString()).build();
     }
 
 }
