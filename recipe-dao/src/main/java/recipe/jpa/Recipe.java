@@ -7,6 +7,8 @@ import java.util.Collection;
 
 
 @Entity
+@NamedQuery(name="Recipe.findRecipesByCategoryName",
+        query="SELECT r FROM Recipe r WHERE r.categoryName = :categoryName")
 @Table(name = "Recipe")
 public class Recipe implements Serializable {
     @Id

@@ -3,10 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="141616bc-1ab7-4d9d-94c5-61f20ea0fad4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/AbstractDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/AbstractDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/RecipeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/dao/RecipeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/jpa/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/src/main/java/recipe/utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/dao/AbstractDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/dao/AbstractDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/dao/RecipeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/dao/RecipeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/jpa/Recipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/jpa/Recipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/classes/recipe/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-dao/target/recipe-dao-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-dao/target/recipe-dao-1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/recipe.ear" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/recipe.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-dao.jar" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-dao.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-ear/target/recipe/recipe-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1.war" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-web/target/recipe-web-1/vendor-es5.js.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +131,8 @@
       <workItem from="1606850048768" duration="1917000" />
       <workItem from="1607014302927" duration="949000" />
       <workItem from="1607170868466" duration="3687000" />
-      <workItem from="1607254548029" duration="7767000" />
+      <workItem from="1607254548029" duration="8048000" />
+      <workItem from="1607446893746" duration="1739000" />
     </task>
     <servers />
   </component>

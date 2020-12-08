@@ -3,9 +3,7 @@ package recipe.dao;
 import recipe.jpa.Recipe;
 
 import javax.ejb.Stateless;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+import javax.persistence.TypedQuery;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -24,14 +22,10 @@ public class RecipeDao extends AbstractDao {
     }
 
     public List<Recipe> findRecipesByCategoryName(String categoryName) {
-        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Recipe> cq = cb.createQuery(Recipe.class);
-
-        Root<Recipe> r = cq.from(Recipe.class);
-        cq.select(r);
-        cq.where(cb.equal(r.get("categoryName"), categoryName));
-
-        return entityManager.createQuery(cq).getResultList();
+        TypedQuery<Recipe> query =
+                entityManager.createNamedQuery("Recipe.findRecipesByCategoryName", Recipe.class);
+        query.setParameter("categoryName", categoryName);
+        return query.getResultList();
     }
 
 
