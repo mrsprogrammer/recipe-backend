@@ -1,3 +1,5 @@
+pełna dokumentacja w katalogu docs
+
 WYMAGANIA:
 
 - instalacja i konfiguracja serwera aplikacji Wildfly
