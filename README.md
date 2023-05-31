@@ -1,15 +1,40 @@
-WYMAGANIA:
+# Projekt back-end
 
+Cel: stworzenie RESTful Web services z zastosowaniem specyfikacji JAVA EE, JAX-RS
+
+### Założenia:
+
+- autoryzacja i uwierzytelnianie
+- generowanie JWT
+- odczytywanie danych przepisów kulinarnych, podzielonych na kategorie
+- odczytywanie komentarzy z bazy będących w relacji z przepisem
+- zapisywanie nowego przepsu do bazy danych
+
+### Wymagania środowiskowe:
+
+- konfiguracja środowiska Java 11 – JDK 11
 - instalacja i konfiguracja serwera aplikacji Wildfly
 - instalacja serwera bazy danych MySQL
-- konfiguracja driver MySLQ (mysql-connector-java-8.0.21.jar) na Wildfly (plik przesłany: /server/module.xml) 
+- instalacja Apache Maven
+- konfiguracja mysql-connector (mysql-connector-java-8.0.21.jar) na Wildfly
 
+### Użyte technologie:
 
-KONFIGURACJA ŚRODOWISKA:
+• Java 11\
+• RESTEasy\
+• Maven\
+• JWTs\
+• Apache Maven Deploy Plugin\
+• Wildfly 20\
+• Hibernate\
+• MySQL\
+
+### URUCHOMIENIE:
 
 Konfiguracja Wildfly - ustawienia w pliku konfiguracyjnym standalone.xml:
 
-1. Ustawienie serwera obrazków. Ustawienie ścieżki do katalogu images (katalog z obrazkami przesłany: /misc/images) 
+1. Ustawienie serwera obrazków. Ustawienie ścieżki do katalogu images (katalog z obrazkami przesłany: /misc/images)
+
 ```
         <subsystem xmlns="urn:jboss:domain:undertow:11.0" default-server="default-server" {...}>
             <buffer-cache name="default"/>
@@ -17,7 +42,7 @@ Konfiguracja Wildfly - ustawienia w pliku konfiguracyjnym standalone.xml:
 		{...}
                 <host name="default-host" alias="localhost">
                     {...}
-                    <location name="/img" handler="images"/>                    
+                    <location name="/img" handler="images"/>
                 </host>
             </server>
 	    {...}
@@ -28,8 +53,8 @@ Konfiguracja Wildfly - ustawienia w pliku konfiguracyjnym standalone.xml:
         </subsystem>
 ```
 
-
 2. Konfiguracja bazy danych MySQL (baza danych: /database/schema.sql), jndi-name="java:jboss/datasources/Recipe":
+
 ```
         <datasource jndi-name="java:jboss/datasources/Recipe" pool-name="Recipe">
             <connection-url>jdbc:mysql://localhost:3306/recipe</connection-url>
@@ -47,11 +72,8 @@ Konfiguracja Wildfly - ustawienia w pliku konfiguracyjnym standalone.xml:
         </datasource>
 ```
 
-URUCHOMIENIE:
-
 W konsoli Widlfly:
-- deploy recipe.ear (plik przesłany: /bin/recipe.ear) 
+
+- deploy recipe.ear (plik przesłany: /bin/recipe.ear)
 - sprawdzenie połączenia z bazą danych
 - aplikacja dostępna: localhost:8080/recipes/
-
-
