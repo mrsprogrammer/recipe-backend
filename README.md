@@ -27,7 +27,7 @@ Cel: stworzenie RESTful Web services z zastosowaniem specyfikacji JAVA EE, JAX-R
 • Apache Maven Deploy Plugin\
 • Wildfly 20\
 • Hibernate\
-• MySQL\
+• MySQL
 
 ### URUCHOMIENIE:
 
