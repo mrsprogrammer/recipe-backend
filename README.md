@@ -1,24 +1,24 @@
-# Projekt back-end
+# Backend Project
 
-Cel: stworzenie RESTful Web services z zastosowaniem specyfikacji JAVA EE, JAX-RS
+Goal: Create RESTful Web Services using the Java EE specification, JAX-RS.
 
-### Założenia:
+### Assumptions:
 
-- autoryzacja i uwierzytelnianie
-- generowanie JWT
-- odczytywanie danych przepisów kulinarnych, podzielonych na kategorie
-- odczytywanie komentarzy z bazy będących w relacji z przepisem
-- zapisywanie nowego przepsu do bazy danych
+- Authorization and authentication
+- Generating JWT
+- Reading recipe data divided into categories
+- Reading comments from the database related to recipes
+- Saving new recipes to the database
 
-### Wymagania środowiskowe:
+### Environment Requirements:
 
-- konfiguracja środowiska Java 11 – JDK 11
-- instalacja i konfiguracja serwera aplikacji Wildfly
-- instalacja serwera bazy danych MySQL
-- instalacja Apache Maven
-- konfiguracja mysql-connector (mysql-connector-java-8.0.21.jar) na Wildfly
+- Java 11 configuration – JDK 11
+- Installation and configuration of the Wildfly application server
+- Installation of the MySQL database server
+- Installation of Apache Maven
+- Configuration of mysql-connector (mysql-connector-java-8.0.21.jar) on Wildfly
 
-### Użyte technologie:
+### Technologies Used:
 
 • Java 11\
 • RESTEasy\
@@ -29,31 +29,31 @@ Cel: stworzenie RESTful Web services z zastosowaniem specyfikacji JAVA EE, JAX-R
 • Hibernate\
 • MySQL
 
-### URUCHOMIENIE:
+### RUNNING THE APPLICATION:
 
-Konfiguracja Wildfly - ustawienia w pliku konfiguracyjnym standalone.xml:
+Wildfly Configuration - settings in the `standalone.xml` configuration file:
 
-1. Ustawienie serwera obrazków. Ustawienie ścieżki do katalogu images (katalog z obrazkami przesłany: /misc/images)
+1. Setting up the image server. Specify the path to the `images` directory (directory with uploaded images: `/misc/images`):
 
 ```
         <subsystem xmlns="urn:jboss:domain:undertow:11.0" default-server="default-server" {...}>
             <buffer-cache name="default"/>
             <server name="default-server">
-		{...}
+        {...}
                 <host name="default-host" alias="localhost">
                     {...}
                     <location name="/img" handler="images"/>
                 </host>
             </server>
-	    {...}
+        {...}
             <handlers>
-		{...}
+        {...}
                 <file name="images" path="..." directory-listing="true"/>
             </handlers>
         </subsystem>
 ```
 
-2. Konfiguracja bazy danych MySQL (baza danych: /database/schema.sql), jndi-name="java:jboss/datasources/Recipe":
+2. MySQL database configuration (database: `/database/schema.sql`), `jndi-name="java:jboss/datasources/Recipe"`:
 
 ```
         <datasource jndi-name="java:jboss/datasources/Recipe" pool-name="Recipe">
@@ -72,8 +72,8 @@ Konfiguracja Wildfly - ustawienia w pliku konfiguracyjnym standalone.xml:
         </datasource>
 ```
 
-W konsoli Widlfly:
+In the Wildfly console:
 
-- deploy recipe.ear (plik przesłany: /bin/recipe.ear)
-- sprawdzenie połączenia z bazą danych
-- aplikacja dostępna: localhost:8080/recipes/
+- Deploy `recipe.ear` (file uploaded: `/bin/recipe.ear`)
+- Verify the database connection
+- Application available at: `localhost:8080/recipes/`
